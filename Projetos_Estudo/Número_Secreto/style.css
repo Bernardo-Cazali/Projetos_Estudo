@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #202024;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #00b37e;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.instrucoes {
+    color: #a4a4ac;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.palpite-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+input[type="number"] {
+    flex: 1;
+    background-color: #121214;
+    border: 2px solid #29292e;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #00b37e;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#btnChutar {
+    background-color: #00b37e;
+    color: #fff;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+#btnChutar:hover {
+    background-color: #00875f;
+}
+
+.mensagem-box {
+    background-color: #121214;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #29292e;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+#mensagemFeedback {
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+}
+
+#mensagemTentativas {
+    color: #8d8d99;
+    font-size: 0.85rem;
+}
+
+#btnReiniciar {
+    background-color: #29292e;
+    color: #e1e1e6;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+#btnReiniciar:hover {
+    background-color: #323238;
+}
+
+.escondido {
+    display: none;
+}
