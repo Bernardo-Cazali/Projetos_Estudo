@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+
+        <p id="dica">Tema: <span id="temaPalavra">Tecnologia</span></p>
+
+        <div id="areaForca">
+            <pre id="boneco">
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+            </pre>
+        </div>
+
+        <div id="palavraSecreta"></div>
+
+        <div class="letras-erradas">
+            Letras erradas: <span id="listaErradas">Nenhuma</span>
+        </div>
+
+        <div class="area-chute">
+            <input type="text" id="inputLetra" maxlength="1" placeholder="Digite uma letra" autocomplete="off">
+            <button id="btnChutar">Chutar</button>
+        </div>
+
+        <div id="mensagemStatus">Boa sorte! Tem 6 tentativas.</div>
+
+        <button id="btnReiniciar" class="escondido">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #2d2d2d;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.painel-status {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(9, 40px); 
+    grid-template-rows: repeat(9, 40px);    
+    gap: 4px;                               
+    background-color: #444;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.quadrado {
+    background-color: #888;
+    border-top: 3px solid #eee;
+    border-left: 3px solid #eee;
+    border-right: 3px solid #555;
+    border-bottom: 3px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none; 
+}
+
+.quadrado.revelado {
+    background-color: #bbb;
+    border: 1px solid #777;
+    cursor: default;
+}
+
+.quadrado.bomba {
+    background-color: #ff4d4d;
+}
+
+.n1 { color: #0004ff; }
+.n2 { color: #007b00; }
+.n3 { color: #ff0000; }
+.n4 { color: #00007b; }
+
+#btnReiniciar {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btnReiniciar:hover {
+    background-color: #e6b800;
+}
+
+.escondido {
+    display: none !important;
+}
